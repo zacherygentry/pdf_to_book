@@ -1,7 +1,6 @@
 name: pdf_to_book
 description: Combination of other packages that allow for a PDF to be displayed as a book whether in portrait or landscape.
 version: 0.0.1
-author: Zachery Gentry
 homepage: https://github.com/zacherygentry/pdf_to_book
 
 environment:

@@ -114,7 +114,6 @@ class _PdfBookState extends State<PdfBook> {
                 enableInfiniteScroll: false,
                 onPageChanged: (pageNum, reason) {
                   currentPage = pageNum;
-                  print(currentPage);
                 },
               ),
               items: createCarouselItems(orientation),
@@ -135,7 +134,6 @@ class _PdfBookState extends State<PdfBook> {
                 enableInfiniteScroll: false,
                 onPageChanged: (pageNum, reason) {
                   currentPage = pageNum;
-                  print(currentPage);
                 },
               ),
               items: createCarouselItems(orientation),
