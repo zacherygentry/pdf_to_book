@@ -63,7 +63,6 @@ class _PdfBookState extends State<PdfBook> {
     List<Widget> res = [];
     if (orientation == Orientation.landscape) {
       for (var i = 0; i < pageImages.length; i++) {
-        print(i);
         if (i == 0 || i == pageImages.length - 1) {
           res.add(PageImageWidget(
             pageImage: pageImages[i],
