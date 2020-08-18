@@ -36,7 +36,8 @@ class _PdfBookState extends State<PdfBook> {
 
     File f = await createFileOfPdfUrl(widget.pdfUrl, filename: widget.filename);
     PdfDocument doc = await PdfDocument.openFile(f.path);
-    for (var i = 1; i < doc.pagesCount; i++) {
+
+    for (var i = 1; i <= doc.pagesCount; i++) {
       PdfPage page = await doc.getPage(i);
       PdfPageImage image =
           await page.render(width: page.width, height: page.height);
@@ -62,6 +63,7 @@ class _PdfBookState extends State<PdfBook> {
     List<Widget> res = [];
     if (orientation == Orientation.landscape) {
       for (var i = 0; i < pageImages.length; i++) {
+        print(i);
         if (i == 0 || i == pageImages.length - 1) {
           res.add(PageImageWidget(
             pageImage: pageImages[i],
@@ -154,7 +156,7 @@ class _PdfBookState extends State<PdfBook> {
         },
       );
     } else {
-      return CircularProgressIndicator();
+      return Center(child: CircularProgressIndicator());
     }
   }
 }
