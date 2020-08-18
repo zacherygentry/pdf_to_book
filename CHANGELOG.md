@@ -1,3 +1,3 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] - 08/18/2020
 
-* TODO: Describe initial release.
+- Initial release: Simple package that exposes a widget which takes in the URL of a PDF and displays it as a book. It adapts to both portrait and landscape modes.

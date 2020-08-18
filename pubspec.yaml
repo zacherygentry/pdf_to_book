@@ -1,8 +1,8 @@
 name: pdf_to_book
-description: A new Flutter package project.
+description: Combination of other packages that allow for a PDF to be displayed as a book whether in portrait or landscape.
 version: 0.0.1
 author: Zachery Gentry
-homepage:
+homepage: https://github.com/zacherygentry/pdf_to_book
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
